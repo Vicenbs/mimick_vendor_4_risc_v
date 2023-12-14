@@ -9,16 +9,8 @@
     Wrapper around mimick, it provides an ExternalProject build of mimick.
   </description>
 
-  <maintainer email="geoff@openrobotics.org">Geoffrey Biggs</maintainer>
-
-  <license>Apache License 2.0</license>  <!-- the contents of this package are Apache 2.0 -->
-  <license>MIT</license>  <!-- mimick is MIT -->
-
-  <url type="website">https://github.com/Snaipe/Mimick</url>
-
-  <author email="jjperez@ekumenlabs.com">Jorge J. Perez</author>
-  <author email="michel@ekumenlabs.com">Michel Hidalgo</author>
-
+  <url type="website">https://github.com/ziyao233/Mimick</url>
+  
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>git</buildtool_depend>
 
