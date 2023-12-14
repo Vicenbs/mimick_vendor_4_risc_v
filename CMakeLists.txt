@@ -14,7 +14,7 @@ macro(build_mimick)
     if(DEFINED CMAKE_GENERATOR)
       list(APPEND cmake_configure_args -G ${CMAKE_GENERATOR})
     endif()
-    if("${CMAKE_SYSTEM_PROCESSOR}" MATCHES "^(x86_|x86-|AMD|amd|x)64$")
+    if("${CMAKE_SYSTEM_PROCESSOR}" MATCHES "^(x86_|x86-|RISCV|AMD|amd|x)64$")
       list(APPEND cmake_configure_args -A x64)
     endif()
   endif()
@@ -60,7 +60,7 @@ macro(build_mimick)
   include(ExternalProject)
   set(mimick_version "de11f8377eb95f932a03707b583bf3d4ce5bd3e7")
   externalproject_add(mimick-${mimick_version}
-    GIT_REPOSITORY https://github.com/ros2/Mimick.git
+    GIT_REPOSITORY https://github.com/ziyao233/Mimick
     GIT_TAG ${mimick_version}
     GIT_CONFIG advice.detachedHead=false
     # Suppress git update due to https://gitlab.kitware.com/cmake/cmake/-/issues/16419
